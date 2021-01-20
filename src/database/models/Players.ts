@@ -2,10 +2,8 @@ import {Entity, PrimaryColumn, Column} from "typeorm";
 
 @Entity()
 export class Players {
- 
-    @PrimaryColumn({
-      length: 100;
-    })
+
+    @PrimaryColumn()
     identifier: string;
 
     @Column()
